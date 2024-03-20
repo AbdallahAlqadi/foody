@@ -1,0 +1,23 @@
+body{
+    width: 80%;
+margin: 0 auto;
+}
+
+#navbarScroll{
+    margin-left: 20%;
+}
+.icons{
+    margin: auto;
+    padding: 0 auto;
+    color: black;
+}
+.nav-iteam{
+
+}
+.btn{
+
+color: white;
+background-color: greenyellow;
+border-radius: 20px;
+
+}
