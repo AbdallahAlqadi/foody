@@ -17,7 +17,89 @@ margin: 0 auto;
 .btn{
 
 color: white;
-background-color: greenyellow;
+background-color:  rgb(54, 255, 47);
 border-radius: 20px;
-
+padding-right: 30px;
+padding-top: 10px;
+padding-bottom: 10px;
+margin-top: auto;
 }
+#FOODI{
+
+    margin-top: 15px;
+    font-weight:bolder;
+    font-size:x-large;
+    font-style: oblique;
+}
+.container-fluid{
+    padding-top: 13px;
+}
+.bi{
+
+    margin-left: 23px;
+    margin-right: 10px;
+    margin-top: 8px;
+}
+
+.container{
+    width: 350%;
+    background-color:rgb(54, 255, 47); 
+    padding-left: 2%;
+}
+
+.grid1{
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-top: 50px;
+}
+#box{
+    display: grid;
+    grid-template-columns: auto auto;
+ 
+}
+.sal1{
+    margin-left: 20px;
+    margin-top: 0%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.rate {
+    float: left;
+    height: 46px;
+    padding: 0 10px;
+}
+.rate:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rate:not(:checked) > label {
+    float:right;
+    width:1em;
+    overflow:hidden;
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:30px;
+    color:#ccc;
+}
+.rate:not(:checked) > label:before {
+    content: '★ ';
+}
+.rate > input:checked ~ label {
+    color: #ffc700;    
+}
+.rate:not(:checked) > label:hover,
+.rate:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+.rate > input:checked + label:hover,
+.rate > input:checked + label:hover ~ label,
+.rate > input:checked ~ label:hover,
+.rate > input:checked ~ label:hover ~ label,
+.rate > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+/* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
