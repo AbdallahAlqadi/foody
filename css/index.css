@@ -43,8 +43,11 @@ margin-top: auto;
 
 .container{
     width: 350%;
-    background-color:rgb(54, 255, 47); 
+    background-color:#36ff2f; 
     padding-left: 2%;
+  bottom: 10%;
+
+ 
 }
 
 .grid1{
@@ -55,10 +58,11 @@ margin-top: auto;
 #box{
     display: grid;
     grid-template-columns: auto auto;
+    margin-top: 250px;
  
 }
 .sal1{
-    margin-left: 20px;
+    margin-left: 70px;
     margin-top: 0%;
 }
 
@@ -105,4 +109,11 @@ margin-top: auto;
 /* Modified from: https://github.com/mukulkant/Star-rating-using-pure-css */
 .nav-link:active{
 background-color: rgb(0, 255, 128);
+}
+img{
+    position: absolute;
+    left: 800px;
+   top: 100px;
+    z-index: -1;
+  left: 785px;
 }
