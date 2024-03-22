@@ -111,10 +111,11 @@ margin-top: auto;
 background-color: rgb(0, 255, 128);
 }
 img{
-
+border-radius: 60px;
     position: absolute;
     left: 800px;
    top: 100px;
     z-index: -1;
   left: 785px;
 }
+
