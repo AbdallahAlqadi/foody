@@ -175,3 +175,39 @@ grid-template-columns: auto auto auto;
     text-align: center;
     padding-left: 14px;
   }
+  .grid5{
+
+    margin-top: 180px;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 80px;
+  }
+  #a2{
+    padding-top: 15px;
+    padding-left: 50px;
+  }
+  .grid6{
+    margin-top: 180px;
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-bottom: 150px;
+  
+  }
+ #t1{
+
+    background-color: #ddd;
+  
+    width: 200px;
+    height: 190px;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 30px;
+  
+ }
+ 
+ #g2{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 15px;
+
+ }
