@@ -121,7 +121,9 @@ border-radius: 50%;
 .grid2{
     display: grid;
     grid-template-columns: auto auto auto auto;
-  width: 110%;
+  width: 70%;
+  gap: 60px;
+  padding-left: 150px;
 }
 #p1{
     text-align: center;
@@ -130,6 +132,7 @@ border-radius: 50%;
 }
 .grid3{
     margin-top: 100px;
+
 }
 
 a {
