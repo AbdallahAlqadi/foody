@@ -242,11 +242,12 @@ grid-template-columns: auto auto auto;
   background-color: #36ff2f;
   color: aliceblue;
   width: 70px;
-  height: 70px;
+  height: 68px;
   border-radius:0 50px;
   padding-top: 10px;
-  padding-right:5px;
+  padding-right:8px;
   margin-top: -9px;
+  
  }
  .bi-heart{
   width: 30px;
