@@ -176,7 +176,7 @@ display: grid;
 grid-template-columns: auto auto auto;
     margin-top: 120px;
    padding-left: 90px;
-  
+
   }
   #p2{
     margin-right: 35px;
@@ -235,7 +235,23 @@ grid-template-columns: auto auto auto;
     gap: 15px;
 
  }
+
+ .favbutton{
+
+  float:right;
+  background-color: #36ff2f;
+  color: aliceblue;
+  width: 70px;
+  height: 70px;
+  border-radius:0 50px;
+  padding-top: 10px;
+  padding-right:5px;
+  margin-top: -9px;
+ }
+ .bi-heart{
+  width: 30px;
  
+ }
  @media only screen and (max-width: 768px) {
 #im{
   left: 190px;
@@ -304,4 +320,4 @@ padding-left: 1px;
 
  left: 5px;
 }
-
+ }
