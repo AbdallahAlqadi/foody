@@ -253,7 +253,10 @@ grid-template-columns: auto auto auto;
   width: 30px;
  
  }
- 
+ .bi-heart-fill{
+  display: none;
+  width: 30px;
+ }
  @media only screen and (max-width: 768px) {
 #im{
   left: 190px;
