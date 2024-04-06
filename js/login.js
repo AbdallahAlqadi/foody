@@ -6,8 +6,9 @@ form.addEventListener('submit',function(e){
 e.preventDefault();
 var alluser=JSON.parse(localStorage.getItem('user formlalocal'));
 for(var i=0;i<alluser.length;i++){
-if(alluser[i].email==email.value){
+if(alluser[i].email==email.value&&alluser[i].password==password.value){
     console.log('email alredy exist');
+    window.location.href='index.html';
 }
 else{
     console.log('email not exist');
