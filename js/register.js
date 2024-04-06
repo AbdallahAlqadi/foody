@@ -6,7 +6,13 @@ var password=document.getElementById('form3Example4');
 
 /*بظهر المعلومات في CONSOLE*/
 var Dataformstorg=JSON.parse(localStorage.getItem('user Data Forml local'));
-var alluser=Dataformstorg;
+if(Dataformstorg==null){
+  var alluser=[];
+}
+else{
+    var alluser=Dataformstorg;
+}
+
 form.addEventListener('submit',function(e) {
     e.preventDefault();
     alert(firstname.value);
@@ -15,8 +21,8 @@ firstname:firstname.value,
  lastname:lastname.value ,
 email:email.value,
 password:password.value   }
-console.log(userData);
-alluser.push(userData)
+        console.log(userData);
+         alluser.push(userData)
 /*بظهر المعلومات في APLICATION */
 localStorage.setItem('user Data Forml local',JSON.stringify(alluser));
 
