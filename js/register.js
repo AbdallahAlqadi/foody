@@ -19,7 +19,7 @@ else{
 form.addEventListener('submit',function(e) {
     e.preventDefault();
   
-    alert(username.value);
+    alert(firstname.value);
     // معلومات user(key,value)
     var userData={
 firstname:firstname.value,
@@ -31,7 +31,7 @@ phone:phone.value ,
 username:username.value 
   }
         console.log(userData);
-
+        
    
         // بضيف معلومات كل USER IN ALLUSER
          alluser.push(userData)
