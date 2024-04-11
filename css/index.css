@@ -153,7 +153,10 @@ a {
     color: black;
 
   }
-  
+  .btn{
+    margin-top: 5px;
+    padding: 8px 8px 10px 10px;
+  }
   .previous {
     background-color: #f1e9e9;
    

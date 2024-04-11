@@ -2,7 +2,7 @@ var favbutton=document.getElementsByClassName('favbutton');
 var islogin=JSON.parse(localStorage.getItem('isloggedIn'));
 if(islogin==null){
 alert('is login first');
-window.location.href='login.html';
+
 }
 else if(islogin==false){
     alert('please login first');
@@ -25,4 +25,5 @@ favbutton[index].addEventListener('click',()=>{
         fill.style.display=='none'
     }
 })
+
 }
