@@ -13,6 +13,7 @@ var username=document.getElementById('form3Example7');
 
 // بقدر ادخل على DATA 
 var userDataFromStorage = JSON.parse(localStorage.getItem('correctKeyName'));
+   alert(userDataFromStorage) //مهم جدا
 if(userDataFromStorage==null){
   var alluser=[];
 }
