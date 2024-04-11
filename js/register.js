@@ -9,12 +9,12 @@ var username=document.getElementById('form3Example7');
 
 
 // بقدر ادخل على DATA 
-var Dataformstorg=JSON.parse(localStorage.getItem('user Data Forml local'));
-if(Dataformstorg==null){
+var userDataFromStorage = JSON.parse(localStorage.getItem('correctKeyName'));
+if(userDataFromStorage==null){
   var alluser=[];
 }
 else{
-    var alluser=Dataformstorg;
+    var alluser=userDataFromStorage;
 }
 form.addEventListener('submit',function(e) {
     e.preventDefault();
@@ -31,8 +31,9 @@ phone:phone.value ,
 username:username.value 
   }
         console.log(userData);
-        
-   
+      
+       
+
         // بضيف معلومات كل USER IN ALLUSER
          alluser.push(userData)
 // بوخذ المعلومات وبحفظها في APPLICATION
@@ -40,4 +41,5 @@ username:username.value
 localStorage.setItem('user Data Forml local',JSON.stringify(alluser));
 
 })
+
 
