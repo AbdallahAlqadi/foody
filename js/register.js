@@ -3,6 +3,9 @@ var firstname=document.getElementById('form3Example1');
 var lastname=document.getElementById('form3Example2');
 var email=document.getElementById('form3Example3');
 var password=document.getElementById('form3Example4');
+var ConfPassword=document.getElementById('form3Example5');
+var phone=document.getElementById('form3Example6');
+var username=document.getElementById('form3Example7');
 
 
 // بقدر ادخل على DATA 
@@ -15,14 +18,20 @@ else{
 }
 form.addEventListener('submit',function(e) {
     e.preventDefault();
-    alert(firstname.value);
+  
+    alert(username.value);
     // معلومات user(key,value)
     var userData={
 firstname:firstname.value,
  lastname:lastname.value ,
 email:email.value,
-password:password.value   }
+password:password.value ,
+ConfPassword:ConfPassword.value ,
+phone:phone.value ,
+username:username.value 
+  }
         console.log(userData);
+
    
         // بضيف معلومات كل USER IN ALLUSER
          alluser.push(userData)
