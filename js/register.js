@@ -35,10 +35,9 @@ ConfPassword:ConfPassword.value ,
 phone:phone.value ,
 username:username.value 
   }
-  
 
       
-       fname.innerHTML='userDataFromStorage'
+    
 
         // بضيف معلومات كل USER IN ALLUSER
          alluser.push(userData)
@@ -47,7 +46,6 @@ username:username.value
 localStorage.setItem('user Data Forml local',JSON.stringify(alluser));
 
 })
-
 
 
 
