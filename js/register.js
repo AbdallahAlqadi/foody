@@ -4,6 +4,7 @@ var lastname=document.getElementById('form3Example2');
 var email=document.getElementById('form3Example3');
 var password=document.getElementById('form3Example4');
 
+
 // بقدر ادخل على DATA 
 var Dataformstorg=JSON.parse(localStorage.getItem('user Data Forml local'));
 if(Dataformstorg==null){
@@ -12,7 +13,6 @@ if(Dataformstorg==null){
 else{
     var alluser=Dataformstorg;
 }
-
 form.addEventListener('submit',function(e) {
     e.preventDefault();
     alert(firstname.value);
@@ -23,6 +23,7 @@ firstname:firstname.value,
 email:email.value,
 password:password.value   }
         console.log(userData);
+   
         // بضيف معلومات كل USER IN ALLUSER
          alluser.push(userData)
 // بوخذ المعلومات وبحفظها في APPLICATION
