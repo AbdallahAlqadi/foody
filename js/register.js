@@ -30,3 +30,4 @@ password:password.value   }
 localStorage.setItem('user Data Forml local',JSON.stringify(alluser));
 
 })
+
