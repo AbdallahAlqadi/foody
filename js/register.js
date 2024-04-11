@@ -8,6 +8,9 @@ var phone=document.getElementById('form3Example6');
 var username=document.getElementById('form3Example7');
 
 
+
+
+
 // بقدر ادخل على DATA 
 var userDataFromStorage = JSON.parse(localStorage.getItem('correctKeyName'));
 if(userDataFromStorage==null){
@@ -21,7 +24,7 @@ form.addEventListener('submit',function(e) {
   
     alert(firstname.value);
     // معلومات user(key,value)
-    var userData={
+   var  userData={
 firstname:firstname.value,
  lastname:lastname.value ,
 email:email.value,
@@ -30,7 +33,8 @@ ConfPassword:ConfPassword.value ,
 phone:phone.value ,
 username:username.value 
   }
-        console.log(userData);
+  
+
       
        
 
@@ -41,5 +45,7 @@ username:username.value
 localStorage.setItem('user Data Forml local',JSON.stringify(alluser));
 
 })
+
+
 
 
