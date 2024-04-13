@@ -116,7 +116,7 @@ border-radius: 50%;
    top: 100px;
     z-index: -1;
   left: 785px;
-  margin-right: 10px;
+  margin-left: 130px;
   border-radius: 500px;
    height: 380px;
     width: 400px;
@@ -204,6 +204,11 @@ grid-template-columns: auto auto auto;
     margin-bottom: 150px;
   
   }
+  #x1{
+    background-color: rgb(
+      180, 80, 60,.5);
+  }
+  
  #t1{
 
     background-color: #ddd;
@@ -270,7 +275,7 @@ grid-template-columns: auto auto auto;
 }
 #box{
   margin-top: 220px;
- margin-right: 100px;
+ margin-right: 150px;
 }
 #b1{
   width: 90px;
