@@ -7,6 +7,7 @@ var alluser=JSON.parse(localStorage.getItem('user Data Forml local'));
 for(var i=0;i<alluser.length;i++){
     if(alluser[i].email==email.value&&alluser[i].password==password.value){
         console.log('email alredy exist');
+        localStorage.setItem('loginUser',JSON.stringify(alluser[i]))
         window.location.href='index.html';
     }
 else{

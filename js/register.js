@@ -36,7 +36,7 @@ form.addEventListener('submit', function(e) {
     alluser.push(userData);
 
     // Save the updated user data to local storage
-    localStorage.setItem('user Data Forml local', JSON.stringify(alluser));
+    localStorage.setItem('userDataFormllocal', JSON.stringify(alluser));
 
 
     // Optionally, you can display a success message or perform other actions here
