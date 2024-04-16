@@ -13,4 +13,18 @@ gap: 15px;
 grid-template-columns: auto auto auto;
 }
 body{
-  background-color: rgba(0, 0, 255, 0.1);}
+  background-color: rgba(0, 0, 255, 0.3);}
+
+  #delete{
+
+    border-radius: 10px;
+    margin-top: 5px;
+  }
+  #update{
+    border-radius: 10px;
+    margin-top: 5px;
+    
+  }
+  .btn-primary{
+    margin-top: 6px;
+  }
