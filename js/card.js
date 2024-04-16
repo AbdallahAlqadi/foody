@@ -47,7 +47,7 @@ cardbody.append(card)
 
 })
 
-
+//Delete
 function Delete() {
     var cards = cardbody.querySelectorAll('.card');
     var lastCard = cards[cards.length - 1];
@@ -60,6 +60,7 @@ function Delete() {
   }
   
 
+//Update
   function Update() {
     var lastCard = cardbody.querySelector('.card:last-child');
   
@@ -85,9 +86,9 @@ function Delete() {
       lastCard.querySelector('.card-text').textContent = newDescriptionText;
     }
     if (newPriceText) {
-      lastCard.querySelector('.btn-primary').textContent = newPriceText;  // Assuming price is displayed on a button with class 'btn-primary'
+      lastCard.querySelector('.btn-primary').textContent = newPriceText; 
     }
   
-    alert('Card updated successfully!');
+    alert('Card updated successfully.');
   }
   
