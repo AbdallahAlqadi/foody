@@ -1,21 +1,21 @@
 var flip=document.getElementsByClassName('flip');
-var cardtitl=document.getElementsByClassName('card-title');
-var cardtext=document.getElementsByClassName('card-text');
-var cardlink=document.getElementsByClassName('card-link');
-var faceorback=document.getElementsByClassName('face');
- function flipcard(index){
-if(faceorback[index].innerHTML==='face'){
-   faceorback[index].innerHTML=='Back'
-   cardtitl[index].innerHTML='waiting Back'
-   cardtext[index].innerHTML='waiting Back'
- cardlink[index].innerHTML='waiting Back'
+var cardTitl=document.getElementsByClassName('card-title');
+var cardText=document.getElementsByClassName('card-text');
+var cardLink=document.getElementsByClassName('card-link');
+var faceOrback=document.getElementsByClassName('face');
+ function flipThecard(a){
+if(faceOrback[a].innerHTML=='face'){
+   faceOrback[a].innerHTML='Back'
+   cardTitl[a].innerHTML='waiting Back'
+   cardText[a].innerHTML='waiting Back'
+ cardLink[a].innerHTML='waiting Back'
  
 }
 else {
-   faceorback[index].innerHTML=='face'
-   cardtitl[index].innerHTML='waiting face'
-   cardtext[index].innerHTML='waiting face'
- cardlink[index].innerHTML='waiting face'
+   faceOrback[a].innerHTML='face'
+   cardTitl[a].innerHTML='waiting face'
+   cardText[a].innerHTML='waiting face'
+ cardLink[a].innerHTML='waiting face'
 
 }
  }
