@@ -3,6 +3,7 @@ var cardTitl=document.getElementsByClassName('card-title');
 var cardText=document.getElementsByClassName('card-text');
 var cardLink=document.getElementsByClassName('card-link');
 var faceOrback=document.getElementsByClassName('face');
+var flipform=document.getElementById('flipform');
  function flipThecard(a){
 if(faceOrback[a].innerHTML=='face'){
    faceOrback[a].innerHTML='Back'
@@ -19,3 +20,7 @@ else {
 
 }
  }
+
+
+
+ 
