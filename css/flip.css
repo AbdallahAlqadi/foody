@@ -1,0 +1,11 @@
+#cards{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: auto auto;
+
+}
+#form{
+    width: 800px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
