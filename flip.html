@@ -12,18 +12,18 @@
       <form id="flipform">
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">h1 tage</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
         </div>
 
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">link tage</label>
-          <input type="text" class="form-control" id="exampleInputPassword1">
+          <input type="text" class="form-control" id="text">
         </div>
 
         <div class="mb-3">
           <label for="exampleInputPassword1" class="form-label">p tage</label>
-          <input type="text" class="form-control" id="exampleInputPassword1">
+          <input type="text" class="form-control" id="atage">
         </div>
 
         <div class="mb-3 form-check">
@@ -40,7 +40,7 @@
       
       <div class="card" style="width: 18rem;">
         <button onclick="flipThecard(0)" class="btn btn-primary flip" >Flip</button>
-      <button  class="btn btn-primary">Add Data</button>
+      <button onclick="selectedcard(0)" class="btn btn-primary" >Add Data</button>
       <h1 class="face">face</h1>
         <div class="card-body">
           <h5 class="card-title">waiting Face</h5>
@@ -50,7 +50,7 @@
       </div>
       <div class="card" style="width: 18rem;">
         <button onclick="flipThecard(1)" class="btn btn-primary flip" >Flip</button>
-        <button  class="btn btn-primary">Add Data</button>
+        <button onclick="selectedcard(1)" class="btn btn-primary">Add Data</button>
      <h1 class="face">face</h1>
         <div class="card-body">
           <h5 class="card-title">waiting Face</h5>
