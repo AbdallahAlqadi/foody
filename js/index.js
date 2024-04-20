@@ -1,5 +1,6 @@
 var favbutton=document.getElementsByClassName('favbutton');
 var islogin=JSON.parse(localStorage.getItem('isloggedIn'));
+
 if(islogin==null){
 alert('is login first');
 

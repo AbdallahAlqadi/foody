@@ -28,7 +28,7 @@ else {
  }
 
 function selectedcard(index){
-  alert('you select the card of index : '+(index+1))
+  alert('you select the card : '+(index+1))
   selectedindex=index;
 }
 
