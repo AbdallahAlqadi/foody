@@ -6,6 +6,7 @@ var cardLink=document.getElementsByClassName('card-link');
 var faceOrback=document.getElementsByClassName('face');
 var flipform=document.getElementById('flipform');
 var title=document.getElementById('title');
+console.log(title)
 var text=document.getElementById('text')
 var atage=document.getElementById('atage')
 var selectedindex;
@@ -19,7 +20,6 @@ if(faceOrback[index].innerHTML=='face'){
  faceOrback[index].innerHTML='back' 
 }
 else {
-
    cardTitl[index].innerHTML='waiting face'
    cardText[index].innerHTML='waiting face'
  cardLink[index].innerHTML='waiting face'
@@ -42,7 +42,7 @@ if(selectedindex!=null){
 'text':text.value,
 'atage':atage.value
     }}
-    if(backOrface[selectedindex].back.title!=null){
+    if(backOrface[selectedindex].back!=null){
 
     }
   }
@@ -54,7 +54,7 @@ if(selectedindex!=null){
       
           }} 
   }
-  console.log([selectedindex]['face']['title'])
+  // console.log([selectedindex]['face']['title'])
 alert('you are about to edit the card',(selectedindex+1))
   cardTitl[selectedindex].innerHTML=title.value
   cardText[selectedindex].innerHTML=text.value
