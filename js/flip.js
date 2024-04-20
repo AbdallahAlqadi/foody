@@ -1,3 +1,4 @@
+
 var flip=document.getElementsByClassName('flip');
 var cardTitl=document.getElementsByClassName('card-title');
 var cardText=document.getElementsByClassName('card-text');
