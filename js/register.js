@@ -22,6 +22,7 @@ form.addEventListener('submit', function(e) {
     e.preventDefault(); // Prevent default form submission behavior
 
     // Create an object to store user data
+    
    var userData = {
         firstname: firstname.value,
         lastname: lastname.value,
