@@ -9,7 +9,7 @@ var phone = document.getElementById('form3Example6');
 var username = document.getElementById('form3Example7');
 
 // Retrieve user data from local storage
-var userDataFromStorage = JSON.parse(localStorage.getItem('user Data Forml local'));
+var userDataFromStorage = JSON.parse(localStorage.getItem('userDataFormllocal'));
 
 // Initialize an array to store user data
 
