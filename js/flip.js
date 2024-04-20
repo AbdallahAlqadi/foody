@@ -8,21 +8,21 @@ var title=document.getElementById('title');
 var text=document.getElementById('text')
 var atage=document.getElementById('atage')
 var selectedindex;
+var backOrface={};
 
- function flipThecard(a){
-if(faceOrback[a].innerHTML=='face'){
-   faceOrback[a].innerHTML='Back'
-   cardTitl[a].innerHTML='waiting Back'
-   cardText[a].innerHTML='waiting Back'
- cardLink[a].innerHTML='waiting Back'
- 
+ function flipThecard(index){
+if(faceOrback[index].innerHTML=='face'){
+   cardTitl[index].innerHTML=backOrface[index]['face']['title'];
+   cardText[index].innerHTML=backOrface[index]['face']['text'];
+ cardLink[index].innerHTML=backOrface[index]['face']['atage'];
+ faceOrback[index].innerHTML='back' 
 }
 else {
-   faceOrback[a].innerHTML='face'
-   cardTitl[a].innerHTML='waiting face'
-   cardText[a].innerHTML='waiting face'
- cardLink[a].innerHTML='waiting face'
 
+   cardTitl[index].innerHTML='waiting face'
+   cardText[index].innerHTML='waiting face'
+ cardLink[index].innerHTML='waiting face'
+ faceOrback[index].innerHTML='face'
 }
  }
 
@@ -32,18 +32,38 @@ function selectedcard(index){
 }
 
  
-flipform.addEventListener('submit',function(e){
+flipform.addEventListener('submit',(e)=>{
 e.preventDefault()
 if(selectedindex!=null){
+  if(faceOrback[selectedindex].innerHTML=='face'){
+    backOrface[selectedindex]={'face':{
+'title':title.value,
+'text':text.value,
+'atage':atage.value
+    }}
+    if(backOrface[selectedindex].back.title!=null){
 
+    }
+  }
+  else{
+    backOrface={'back':{
+      'title':title.value,
+      'text':text.value,
+      'atage':atage.value
+      
+          }} 
+  }
+  console.log([selectedindex]['face']['title'])
+alert('you are about to edit the card',(selectedindex+1))
   cardTitl[selectedindex].innerHTML=title.value
   cardText[selectedindex].innerHTML=text.value
 cardLink[selectedindex].innerHTML=atage.value
+selectedindex=null;
 
 
 }
 else{
   alert('please select a carde')
 }
-
+flipform.reset()
 })
